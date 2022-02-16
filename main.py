@@ -66,7 +66,7 @@ async def credits_bot(ctx):
 app = Quart(__name__)
 
 
-@app.route('/api/<int:id>')
+@app.route('/api/<int:member_id>')
 async def index(member_id):
     guild = bot.get_guild(guild_id)
     member = guild.get_member(member_id)
@@ -74,7 +74,7 @@ async def index(member_id):
     return jsonify(res)
 
 
-@app.route('/api/<int:id>.png')
+@app.route('/api/<int:member_id>.png')
 async def img_gen(member_id):
     guild = bot.get_guild(guild_id)
     member = guild.get_member(member_id)
