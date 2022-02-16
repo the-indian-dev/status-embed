@@ -16,11 +16,18 @@ async def api(member: discord.Member):
                            'image_small': None,
                            'name': None}
     else:
-        res['presence'] = {'type': str(activ[0].type).split(".")[-1],
-                           'image_big': str(activ[0].large_image_url),
-                           'image_small': str(activ[0].small_image_url),
-                           'name': str(activ[0].name)
-                           }
+        try:
+            res['presence'] = {'type': str(activ[0].type).split(".")[-1],
+                               'image_big': str(activ[0].large_image_url),
+                               'image_small': str(activ[0].small_image_url),
+                               'name': str(activ[0].name)
+                               }
+        except AttributeError:
+            res['presence'] = {'type': str(activ[0].type).split(".")[-1],
+                               'image_big': None,
+                               'image_small': None,
+                               'name': str(activ[0].name)
+                               }
 
     return res
 
