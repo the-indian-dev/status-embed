@@ -38,7 +38,7 @@ async def status_task():
 async def on_ready():
     print("Bot Started")
     bot.loop.create_task(status_task())
-    bot.loop.create_task(app.run_task())
+    bot.loop.create_task(app.run_task(port=int(environ.get("PORT"))))
     bot.load_extension('cogs.api')
     try:
         os.mkdir('temp/')
