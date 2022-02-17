@@ -11,7 +11,7 @@ Status Embed is an awesome open source api and a bot that lets you embed your st
 
 ### How to get it
 
-1. https://discord.gg/qEYbuWu5NE (Join this server)
+1. https://discord.gg/qEYbuWu5NE (Join this server or it will not work)
 2. Go to ``statusembed.theindiandev.xyz/api/<your-user-id>`` for json API and for the image ``statusembed.theindiandev.xyz/api/<your-user-id.png>``.
 
 ### How to self host
