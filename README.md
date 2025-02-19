@@ -1,4 +1,4 @@
-> Current Status : Incomplete
+# Doesn't work anymore
 # Status Embed
 
 Status Embed is an awesome open source api and a bot that lets you embed your status into github's README.md file or almost anywhere with image support.
